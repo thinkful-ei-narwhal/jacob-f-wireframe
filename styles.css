@@ -40,8 +40,9 @@ a {
     text-align: center;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     word-wrap: none;
+    margin-left: 10px;
 }
 
 .keep-scrolling {
@@ -103,4 +104,31 @@ img {
   resize: both;
   background: #ffd73e33;
  
+}
+
+.nav-buttons {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .nav-buttons {
+    display: flex;
+  }
+
+  #menu-button {
+    display:none;
+  }
+
+  #navbar {
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+
+  a {
+    padding: 20px;
+    text-decoration: none;
+
+    
+  }
 }
